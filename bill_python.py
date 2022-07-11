@@ -12,6 +12,10 @@ import math
 # select option
 # output what each person has to pay
 
+#if only one person, you dont have to input food
+#maybe ask how many people first, ask if you ordered more than one item
+#then calculate it!
+
 name = ''
 name = input("Please enter your name: ")
 while name == '': #while they don't respond
@@ -33,7 +37,7 @@ inputTip = input('Enter the percentage of tip: ')
 while inputTip == '': #while they don't respond
     inputTip = input('Sorry could you please enter the percentage of tip: ')
 Tip = (float(inputTip)/100) * bill #convert their string into float, turn into percentage and multiply to bill
-Nyc = ''
+Nyc = ''                        
 Nyc = input('Are you in NYC?, Y or N: ') 
 while Nyc == '': #while they don't respond
     Nyc = input('Sorry are you in NYC?, Y or N: ')
